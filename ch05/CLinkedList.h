@@ -2,8 +2,8 @@
 #define __C_LINKED_LIST_H__
 
 
-#define TRUE 0  
-#define FALSE 1
+#define TRUE 1
+#define FALSE 0
 
 typedef int Data;
 
@@ -27,12 +27,11 @@ typedef CList List;
 
 void ListInit(List * plist);
 void LInsert(List * plist, Data data);
-
-
+void LInsertFront(List *plist, Data data);
 int LFirst(List * plist, Data * pdata);
 int LNext(List* plist, Data * pdata);
 Data LRemove(List * plist);
 int LCount(List * plist);
 
 
-#endif 
+#endif
